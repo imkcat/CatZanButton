@@ -68,6 +68,9 @@
  */
 -(void)zanAnimationPlay{
     [self setIsZan:!self.isZan];
+    if (self.clickHandler!=nil) {
+        self.clickHandler(self);
+    }
     [UIView animateWithDuration:0.2f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame)*1.5, CGRectGetHeight(self.frame)*1.5)];
     } completion:^(BOOL finished) {

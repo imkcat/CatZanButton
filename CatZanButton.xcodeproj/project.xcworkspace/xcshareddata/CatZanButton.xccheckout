@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3E922F48-E840-47C9-8E29-939E5F9773B7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CatZanButton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6BAA1E74F97ABF17641D4DC3E3F3A1E9510C5495</key>
+		<string>https://github.com/K-cat/CatZanButton.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CatZanButton.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6BAA1E74F97ABF17641D4DC3E3F3A1E9510C5495</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/K-cat/CatZanButton.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6BAA1E74F97ABF17641D4DC3E3F3A1E9510C5495</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BAA1E74F97ABF17641D4DC3E3F3A1E9510C5495</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CatZanButton</string>
+		</dict>
+	</array>
+</dict>
+</plist>
