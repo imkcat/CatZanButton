@@ -23,4 +23,12 @@ CatZanButton *zanBtn=[[CatZanButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50
 [zanBtn setCenter:self.view.center];
 [self.view addSubview:zanBtn];
 
+[zanBtn setClickHandler:^(CatZanButton *zanButton) {
+  if (zanButton.isZan) {
+    NSLog(@"Zan!");
+  }else{
+    NSLog(@"Cancel zan!");
+  }
+}];
+
 ```
