@@ -11,15 +11,7 @@
 
 @interface CatZanButton : UIControl
 
-/**
- *  A bool value for button current status
- */
 @property (nonatomic) BOOL isZan;
-
-/**
- *  A handler for click button action
- */
-@property (nonatomic, copy) void (^clickHandler)(CatZanButton *zanButton);
 
 /**
  *  Initializes a new CatZanButton with appoint properties

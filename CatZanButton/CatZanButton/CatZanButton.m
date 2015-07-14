@@ -39,18 +39,20 @@
     _effectLayer=[CAEmitterLayer layer];
     [_effectLayer setFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     [self.layer addSublayer:_effectLayer];
-    [_effectLayer setEmitterShape:kCAEmitterLayerPoint];
+    [_effectLayer setEmitterShape:kCAEmitterLayerCircle];
+    [_effectLayer setEmitterMode:kCAEmitterLayerOutline];
     [_effectLayer setEmitterPosition:CGPointMake(CGRectGetWidth(self.frame)/2, CGRectGetHeight(self.frame)/2)];
-    [_effectLayer setEmitterSize:CGSizeMake(CGRectGetWidth(self.frame)*2, CGRectGetHeight(self.frame)*2)];
+    [_effectLayer setEmitterSize:CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     
     _effectCell=[CAEmitterCell emitterCell];
     [_effectCell setName:@"zanShape"];
     [_effectCell setContents:(__bridge id)[UIImage imageNamed:@"EffectImage"].CGImage];
-    [_effectCell setLifetime:1.5f];
+    [_effectCell setAlphaSpeed:-1.0f];
+    [_effectCell setLifetime:1.0f];
     [_effectCell setBirthRate:0];
     [_effectCell setVelocity:50];
     [_effectCell setVelocityRange:50];
-    [_effectCell setEmissionRange:M_PI];
+//    [_effectCell setEmissionRange:M_PI];
     
     [_effectLayer setEmitterCells:@[_effectCell]];
     
@@ -68,9 +70,6 @@
  */
 -(void)zanAnimationPlay{
     [self setIsZan:!self.isZan];
-    if (self.clickHandler!=nil) {
-        self.clickHandler(self);
-    }
     [UIView animateWithDuration:0.2f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame)*1.5, CGRectGetHeight(self.frame)*1.5)];
     } completion:^(BOOL finished) {
@@ -81,7 +80,7 @@
                 CABasicAnimation *effectLayerAnimation=[CABasicAnimation animationWithKeyPath:@"emitterCells.zanShape.birthRate"];
                 [effectLayerAnimation setFromValue:[NSNumber numberWithFloat:100]];
                 [effectLayerAnimation setToValue:[NSNumber numberWithFloat:0]];
-                [effectLayerAnimation setDuration:1.0f];
+                [effectLayerAnimation setDuration:0.0f];
                 [effectLayerAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
                 [_effectLayer addAnimation:effectLayerAnimation forKey:@"ZanCount"];
             }

@@ -17,17 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CatZanButton *zanBtn=[[CatZanButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100) zanImage:[UIImage imageNamed:@"Zan"] unZanImage:[UIImage imageNamed:@"UnZan"]];
+    CatZanButton *zanBtn=[[CatZanButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50) zanImage:[UIImage imageNamed:@"Zan"] unZanImage:[UIImage imageNamed:@"UnZan"]];
     [zanBtn setCenter:self.view.center];
     [self.view addSubview:zanBtn];
-    
-    [zanBtn setClickHandler:^(CatZanButton *zanButton) {
-        if (zanButton.isZan) {
-            NSLog(@"Zan!");
-        }else{
-            NSLog(@"Cancel zan!");
-        }
-    }];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

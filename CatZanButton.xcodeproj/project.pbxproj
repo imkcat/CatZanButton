@@ -12,6 +12,7 @@
 		D0D70B121B5360B900889677 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B111B5360B900889677 /* ViewController.m */; };
 		D0D70B151B5360B900889677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B131B5360B900889677 /* Main.storyboard */; };
 		D0D70B171B5360B900889677 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B161B5360B900889677 /* Images.xcassets */; };
+		D0D70B1A1B5360B900889677 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B181B5360B900889677 /* LaunchScreen.xib */; };
 		D0D70B261B5360B900889677 /* CatZanButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B251B5360B900889677 /* CatZanButtonTests.m */; };
 		D0D70B321B5361AA00889677 /* CatZanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B311B5361AA00889677 /* CatZanButton.m */; };
 		D0D70B381B53975000889677 /* EffectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B371B53975000889677 /* EffectImage.png */; };
@@ -39,6 +40,7 @@
 		D0D70B111B5360B900889677 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D0D70B141B5360B900889677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0D70B161B5360B900889677 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0D70B191B5360B900889677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0D70B1F1B5360B900889677 /* CatZanButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatZanButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D70B241B5360B900889677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D70B251B5360B900889677 /* CatZanButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatZanButtonTests.m; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				D0D70B3C1B53B73500889677 /* UnZan.png */,
 				D0D70B131B5360B900889677 /* Main.storyboard */,
 				D0D70B161B5360B900889677 /* Images.xcassets */,
+				D0D70B181B5360B900889677 /* LaunchScreen.xib */,
 				D0D70B091B5360B900889677 /* Supporting Files */,
 			);
 			path = CatZanButton;
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D70B151B5360B900889677 /* Main.storyboard in Resources */,
+				D0D70B1A1B5360B900889677 /* LaunchScreen.xib in Resources */,
 				D0D70B3D1B53B73500889677 /* Zan.png in Resources */,
 				D0D70B381B53975000889677 /* EffectImage.png in Resources */,
 				D0D70B3E1B53B73500889677 /* UnZan.png in Resources */,
@@ -272,6 +276,14 @@
 				D0D70B141B5360B900889677 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D70B181B5360B900889677 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D70B191B5360B900889677 /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,7 +375,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatZanButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -375,7 +386,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatZanButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,7 +446,6 @@
 				D0D70B2B1B5360B900889677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		D0D70B2C1B5360B900889677 /* Build configuration list for PBXNativeTarget "CatZanButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -445,7 +454,6 @@
 				D0D70B2E1B5360B900889677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
