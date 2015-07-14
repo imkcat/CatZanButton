@@ -1,0 +1,9 @@
+language: objective-c
+before_install:
+- brew update
+- brew reinstall xctool
+xcode_project: CatZanButton.xcodeproj
+xcode_scheme: CatZanButton
+xcode_sdk:
+- iphonesimulator
+- iphonesimulator8.1
