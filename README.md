@@ -1,5 +1,6 @@
 # CatZanButton
 
+[![Build Status](https://api.travis-ci.org/K-cat/CatZanButton.svg)](https://travis-ci.org/K-cat)
 [![Version](https://img.shields.io/cocoapods/v/CatZanButton.svg)](https://cocoapods.org/pods/CatZanButton)
 [![Platform](https://img.shields.io/cocoapods/p/CatZanButton.svg)]()
 [![License](https://img.shields.io/cocoapods/l/CatZanButton.svg)]()
