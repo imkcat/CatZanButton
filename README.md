@@ -25,9 +25,9 @@ CatZanButton *zanBtn=[[CatZanButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50
 
 [zanBtn setClickHandler:^(CatZanButton *zanButton) {
   if (zanButton.isZan) {
-    NSLog(@"Zan!");
+    //Do something
   }else{
-    NSLog(@"Cancel zan!");
+    //Do something
   }
 }];
 
