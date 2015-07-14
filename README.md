@@ -1,15 +1,21 @@
 # CatZanButton
 
+[![Version](https://img.shields.io/cocoapods/v/CatZanButton.svg)](https://cocoapods.org/pods/CatZanButton)
+[![Platform](https://img.shields.io/cocoapods/p/CatZanButton.svg)]()
+[![License](https://img.shields.io/cocoapods/l/CatZanButton.svg)]()
+
 # Introduction
 
 CatZanButton is easy to create a zan button with cool animation
 
 # ScreenRecords
+
 ![ScreenShots1](https://raw.githubusercontent.com/K-cat/CatZanButton/master/ScreenRecord.gif)
 
 # Installation
 
 CatZanButton is available on [CocoaPods](http://cocoapods.org).Just add the following to your project Podfile:
+
 ```ruby
 pod 'CatZanButton'
 ```
