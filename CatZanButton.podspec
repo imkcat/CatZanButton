@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CatZanButton"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "A animation button for Zan."
   s.homepage     = "https://github.com/K-cat/CatZanButton"
   s.license      = "MIT"
