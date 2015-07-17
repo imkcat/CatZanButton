@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D07D1C6A1B58DE71002B5732 /* UnZan.png in Resources */ = {isa = PBXBuildFile; fileRef = D07D1C681B58DE71002B5732 /* UnZan.png */; };
+		D07D1C6B1B58DE71002B5732 /* Zan.png in Resources */ = {isa = PBXBuildFile; fileRef = D07D1C691B58DE71002B5732 /* Zan.png */; };
 		D0D70B0C1B5360B900889677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B0B1B5360B900889677 /* main.m */; };
 		D0D70B0F1B5360B900889677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B0E1B5360B900889677 /* AppDelegate.m */; };
 		D0D70B121B5360B900889677 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B111B5360B900889677 /* ViewController.m */; };
@@ -15,8 +17,6 @@
 		D0D70B261B5360B900889677 /* CatZanButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B251B5360B900889677 /* CatZanButtonTests.m */; };
 		D0D70B321B5361AA00889677 /* CatZanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D70B311B5361AA00889677 /* CatZanButton.m */; };
 		D0D70B381B53975000889677 /* EffectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B371B53975000889677 /* EffectImage.png */; };
-		D0D70B3D1B53B73500889677 /* Zan.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B3B1B53B73500889677 /* Zan.png */; };
-		D0D70B3E1B53B73500889677 /* UnZan.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D70B3C1B53B73500889677 /* UnZan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D07D1C681B58DE71002B5732 /* UnZan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UnZan.png; path = CatZanButton/UnZan.png; sourceTree = "<group>"; };
+		D07D1C691B58DE71002B5732 /* Zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zan.png; path = CatZanButton/Zan.png; sourceTree = "<group>"; };
 		D0D70B061B5360B900889677 /* CatZanButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatZanButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D70B0A1B5360B900889677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D70B0B1B5360B900889677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +47,6 @@
 		D0D70B301B5361AA00889677 /* CatZanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatZanButton.h; path = CatZanButton/CatZanButton.h; sourceTree = "<group>"; };
 		D0D70B311B5361AA00889677 /* CatZanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatZanButton.m; path = CatZanButton/CatZanButton.m; sourceTree = "<group>"; };
 		D0D70B371B53975000889677 /* EffectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EffectImage.png; path = CatZanButton/EffectImage.png; sourceTree = "<group>"; };
-		D0D70B3B1B53B73500889677 /* Zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zan.png; sourceTree = "<group>"; };
-		D0D70B3C1B53B73500889677 /* UnZan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnZan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,6 @@
 				D0D70B0E1B5360B900889677 /* AppDelegate.m */,
 				D0D70B101B5360B900889677 /* ViewController.h */,
 				D0D70B111B5360B900889677 /* ViewController.m */,
-				D0D70B3B1B53B73500889677 /* Zan.png */,
-				D0D70B3C1B53B73500889677 /* UnZan.png */,
 				D0D70B131B5360B900889677 /* Main.storyboard */,
 				D0D70B161B5360B900889677 /* Images.xcassets */,
 				D0D70B091B5360B900889677 /* Supporting Files */,
@@ -134,6 +132,8 @@
 				D0D70B301B5361AA00889677 /* CatZanButton.h */,
 				D0D70B311B5361AA00889677 /* CatZanButton.m */,
 				D0D70B371B53975000889677 /* EffectImage.png */,
+				D07D1C681B58DE71002B5732 /* UnZan.png */,
+				D07D1C691B58DE71002B5732 /* Zan.png */,
 			);
 			name = CatZanButton;
 			sourceTree = "<group>";
@@ -218,10 +218,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07D1C6A1B58DE71002B5732 /* UnZan.png in Resources */,
 				D0D70B151B5360B900889677 /* Main.storyboard in Resources */,
-				D0D70B3D1B53B73500889677 /* Zan.png in Resources */,
+				D07D1C6B1B58DE71002B5732 /* Zan.png in Resources */,
 				D0D70B381B53975000889677 /* EffectImage.png in Resources */,
-				D0D70B3E1B53B73500889677 /* UnZan.png in Resources */,
 				D0D70B171B5360B900889677 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

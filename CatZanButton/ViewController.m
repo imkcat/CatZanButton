@@ -17,9 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CatZanButton *zanBtn=[[CatZanButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50) zanImage:[UIImage imageNamed:@"Zan"] unZanImage:[UIImage imageNamed:@"UnZan"]];
+    CatZanButton *zanBtn=[[CatZanButton alloc] init];
     [zanBtn setCenter:self.view.center];
     [self.view addSubview:zanBtn];
+    
+    [zanBtn setType:CatZanButtonTypeFirework];
     
     [zanBtn setClickHandler:^(CatZanButton *zanButton) {
         if (zanButton.isZan) {

@@ -9,12 +9,22 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
+typedef NS_ENUM(NSInteger, CatZanButtonType) {
+    CatZanButtonTypeFirework,
+    CatZanButtonTypeFocus
+};
+
 @interface CatZanButton : UIControl
 
 /**
  *  A bool value for button current status
  */
 @property (nonatomic) BOOL isZan;
+
+/**
+ *  A enum for button animation type
+ */
+@property (nonatomic) CatZanButtonType type;
 
 /**
  *  A handler for click button action
