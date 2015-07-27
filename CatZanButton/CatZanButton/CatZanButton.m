@@ -110,22 +110,35 @@
     
     switch (_type) {
         case CatZanButtonTypeFirework:{
-            [UIView animateWithDuration:0.2f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame)*1.5, CGRectGetHeight(self.frame)*1.5)];
+            [_zanImageView setBounds:CGRectMake(0, 0, 0, 0)];
+            [UIView animateWithDuration:0.5f delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:5 options:UIViewAnimationOptionCurveLinear animations:^{
+                [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+                if (self.isZan) {
+                    CABasicAnimation *effectLayerAnimation=[CABasicAnimation animationWithKeyPath:@"emitterCells.zanShape.birthRate"];
+                    [effectLayerAnimation setFromValue:[NSNumber numberWithFloat:100]];
+                    [effectLayerAnimation setToValue:[NSNumber numberWithFloat:0]];
+                    [effectLayerAnimation setDuration:0.0f];
+                    [effectLayerAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+                    [_effectLayer addAnimation:effectLayerAnimation forKey:@"ZanCount"];
+                }
             } completion:^(BOOL finished) {
-                [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-                    [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
-                } completion:^(BOOL finished) {
-                    if (self.isZan) {
-                        CABasicAnimation *effectLayerAnimation=[CABasicAnimation animationWithKeyPath:@"emitterCells.zanShape.birthRate"];
-                        [effectLayerAnimation setFromValue:[NSNumber numberWithFloat:100]];
-                        [effectLayerAnimation setToValue:[NSNumber numberWithFloat:0]];
-                        [effectLayerAnimation setDuration:0.0f];
-                        [effectLayerAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
-                        [_effectLayer addAnimation:effectLayerAnimation forKey:@"ZanCount"];
-                    }
-                }];
             }];
+//            [UIView animateWithDuration:0.2f delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+//                [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame)*1.5, CGRectGetHeight(self.frame)*1.5)];
+//            } completion:^(BOOL finished) {
+//                [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+//                    [_zanImageView setBounds:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+//                } completion:^(BOOL finished) {
+//                    if (self.isZan) {
+//                        CABasicAnimation *effectLayerAnimation=[CABasicAnimation animationWithKeyPath:@"emitterCells.zanShape.birthRate"];
+//                        [effectLayerAnimation setFromValue:[NSNumber numberWithFloat:100]];
+//                        [effectLayerAnimation setToValue:[NSNumber numberWithFloat:0]];
+//                        [effectLayerAnimation setDuration:0.0f];
+//                        [effectLayerAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+//                        [_effectLayer addAnimation:effectLayerAnimation forKey:@"ZanCount"];
+//                    }
+//                }];
+//            }];
         }
             break;
             
